@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=WDXL+Lubrifont+TC&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: black;
+  color: #fff;
+}
+
+.wrap .content-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.wrap header {
+  line-height: 80px;
+  position: fixed;
+  width: 100%;
+}
+.wrap header .content-inner div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+.wrap header .content-inner div ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.wrap header .content-inner div ul li {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.wrap header .content-inner div ul li a {
+  color: #fff;
+}
+.wrap .index {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+.wrap .index .content-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+.wrap .main {
+  padding: 100px 0;
+}
+.wrap .skill-list {
+  margin-top: 100px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.wrap .skill-list li {
+  width: calc(25% - 20px);
+}
+.skill-card:hover .card-wrap {
+  transform: rotateY(180deg);
+}
+.skill-card .card-wrap {
+  border-radius: 30px;
+  padding: 30px;
+  position: relative;
+  transform: perspective(800px) rotateY(0);
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  background-color: #fff;
+}
+.skill-card .card-wrap > div {
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+.skill-card .card-wrap .card-img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.skill-card .card-wrap .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #646cff;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+  flex-direction: column;
+  color: #fff;
+  border-radius: 30px;
+}
+.skill-card .card-wrap .card-back .card-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.skill-card .card-wrap .card-back .card-per {
+  font-size: 2.5rem;
+}
+.skill-card .card-wrap .num {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  font-size: 3rem;
+}/*# sourceMappingURL=SkillCard.css.map */

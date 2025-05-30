@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=WDXL+Lubrifont+TC&display=swap");
+
+$메인컬러: #646cff;
+$제목컬러: #e97fff;
+$메인글자: #333;
+$둥글기: 30px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: $메인글자;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: black;
+  color: #fff;
+}
+
+@mixin myFlex($gap: 0, $jc: space-between) {
+  display: flex;
+  justify-content: $jc;
+  align-items: center;
+  gap: $gap;
+  flex-wrap: wrap;
+}
+
+.wrap {
+  .content-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  header {
+    line-height: 80px;
+    position: fixed;
+    width: 100%;
+
+    .content-inner {
+      div {
+        @include myFlex();
+
+        ul {
+          @include myFlex(50px);
+
+          li {
+            font-size: 1.25rem;
+            font-weight: 600;
+
+            a {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .index {
+    height: 100vh;
+    @include myFlex();
+
+    .content-inner {
+      @include myFlex(100px);
+    }
+  }
+
+  .main {
+    padding: 100px 0;
+  }
+
+  .skill-list {
+    margin-top: 100px;
+    @include myFlex(20px, start);
+
+    li {
+      width: calc(100% / 4 - 20px);
+    }
+  }
+
+  footer {
+  }
+}

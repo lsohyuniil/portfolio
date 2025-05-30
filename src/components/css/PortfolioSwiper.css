@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.wrap .content-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.wrap header {
+  line-height: 80px;
+}
+.wrap header .content-inner div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+.wrap header .content-inner div ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.wrap header .content-inner div ul li {
+  font-size: 1.13rem;
+  font-weight: bold;
+}
+.wrap .index {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+.wrap .index .content-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+.wrap .main {
+  padding: 100px 0;
+}
+.portSwiper .swiper-slide {
+  display: flex;
+  gap: 30px;
+}
+.portSwiper .swiper-slide img {
+  width: 100%;
+  border-radius: 30px;
+}
+.portSwiper .swiper-slide .text-box {
+  width: 40%;
+}
+.portSwiper .swiper-slide .text-box h3 {
+  font-size: 3rem;
+}
+.portSwiper .swiper-slide .text-box > p {
+  margin: 10px 0 30px;
+}
+.portSwiper .swiper-slide .text-box .btn-wrap ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.portSwiper .swiper-slide .text-box .btn-wrap ul li a {
+  display: inline-block;
+  padding: 5px 20px;
+  background: #222;
+  color: #fff;
+  border-radius: 30px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=PortfolioSwiper.css.map */

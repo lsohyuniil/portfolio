@@ -1,7 +1,7 @@
 import SectionTitle from "../components/SectionTitle";
 import SkillCard from "../components/SkillCard";
 
-interface Skill {
+interface Skills {
   id: number;
   title: string;
   logo: string;
@@ -9,7 +9,7 @@ interface Skill {
   percent: number;
 }
 
-const frontSkills: Skill[] = [
+const frontSkills: Skills[] = [
   {
     id: 0,
     title: "html",

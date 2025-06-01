@@ -2,7 +2,6 @@
   perspective: 600px;
   width: 300px;
   height: 300px;
-  border: 1px solid red;
 }
 
 .cubes {
@@ -11,6 +10,10 @@
   transform-style: preserve-3d;
   position: relative;
   animation: rotateCube 10s infinite linear;
+  animation-play-state: running;
+}
+.cubes:hover {
+  animation-play-state: paused;
 }
 .cubes .cube {
   width: 100%;

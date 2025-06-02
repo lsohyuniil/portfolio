@@ -25,6 +25,8 @@ body {
 }
 .wrap header {
   line-height: 80px;
+  position: fixed;
+  width: 100%;
 }
 .wrap header .content-inner div {
   display: flex;
@@ -74,7 +76,7 @@ body {
   flex-wrap: wrap;
 }
 .wrap .skill-list li {
-  width: calc(25% - 10px);
+  width: calc(25% - 20px);
 }
 .titleBox .title {
   font-size: 6rem;

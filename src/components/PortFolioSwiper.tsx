@@ -23,7 +23,7 @@ const PortfolioList: Portfolio[] = [
     title: "ZikTalk",
     des: "취업 준비생을 위한 AI 기반 직무 맞춤형 모의 면접 서비스",
     skill: "#React #JavaScript #TailwindCss #Zustand #Axios #Node.js",
-    webUrl: "zik-talk-smey.vercel.app",
+    webUrl: "https://zik-talk-smey.vercel.app",
     gitUrl: "https://github.com/ko9612/ZikTalk",
   },
   {
@@ -32,7 +32,7 @@ const PortfolioList: Portfolio[] = [
     title: "Naver",
     des: " 네이버(Naver) 메인 페이지를 HTML5와 CSS3로 구현한 프로젝트",
     skill: "#HTML5 #CSS3",
-    webUrl: "lsohyuniil.github.io/naver/",
+    webUrl: "https://lsohyuniil.github.io/naver/",
     gitUrl: "https://github.com/lsohyuniil/naver",
   },
   {
@@ -41,7 +41,7 @@ const PortfolioList: Portfolio[] = [
     title: "Pokédex",
     des: "포켓몬 데이터를 기반으로 사용자가 원하는 포켓몬을 검색하고, 탐색할 수 있는 웹 애플리케이션",
     skill: "#React #CSS3 #JavaScript",
-    webUrl: "lsohyuniil.github.io/pokedex",
+    webUrl: "https://lsohyuniil.github.io/pokedex",
     gitUrl: "https://github.com/lsohyuniil/pokedex",
   },
   {

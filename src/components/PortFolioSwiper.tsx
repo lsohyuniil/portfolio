@@ -8,6 +8,7 @@ import "./scss/PortfolioSwiper.scss";
 
 interface Portfolio {
   id: number;
+  img: string;
   title: string;
   des: string;
   skill: string;
@@ -18,27 +19,40 @@ interface Portfolio {
 const PortfolioList: Portfolio[] = [
   {
     id: 0,
-    title: "제목1",
-    des: "사이트 리뉴얼함",
-    skill: "#React #Typescript",
-    webUrl: "http://naver.com",
-    gitUrl: "",
+    img: "ziktalk.png",
+    title: "ZikTalk",
+    des: "취업 준비생을 위한 AI 기반 직무 맞춤형 모의 면접 서비스",
+    skill: "#React #JavaScript #TailwindCss #Zustand #Axios #Node.js",
+    webUrl: "zik-talk-smey.vercel.app",
+    gitUrl: "https://github.com/ko9612/ZikTalk",
   },
   {
     id: 1,
-    title: "제목2",
-    des: "사이트 리뉴얼함",
-    skill: "#React",
-    webUrl: "http://kakao.com",
-    gitUrl: "",
+    img: "naver.png",
+    title: "Naver",
+    des: " 네이버(Naver) 메인 페이지를 HTML5와 CSS3로 구현한 프로젝트",
+    skill: "#HTML5 #CSS3",
+    webUrl: "lsohyuniil.github.io/naver/",
+    gitUrl: "https://github.com/lsohyuniil/naver",
   },
   {
     id: 2,
-    title: "제목3",
-    des: "사이트 리뉴얼함",
-    skill: "#Typescript",
-    webUrl: "http://google.com",
-    gitUrl: "",
+    img: "pokedex.png",
+    title: "Pokédex",
+    des: "포켓몬 데이터를 기반으로 사용자가 원하는 포켓몬을 검색하고, 탐색할 수 있는 웹 애플리케이션",
+    skill: "#React #CSS3 #JavaScript",
+    webUrl: "lsohyuniil.github.io/pokedex",
+    gitUrl: "https://github.com/lsohyuniil/pokedex",
+  },
+  {
+    id: 3,
+    img: "emotional.png",
+    title: "Inside Out Emotional Chat",
+    des: "인사이드 아웃 애니메이션의 감정 캐릭터의 성격과 대화 스타일에 맞춰 채팅 응답을 생성하는 웹 기반 감정 채팅 서비스. OpenAI의 GPT API를 활용해 감정별 맞춤형 대화 경험 제공.",
+    skill:
+      "#React #JavaScript #styled-components #Axios #Node.js #Express.js #OpenAI",
+    webUrl: "",
+    gitUrl: "https://github.com/lsohyuniil/emotional",
   },
 ];
 
@@ -56,10 +70,7 @@ const PortFolioSwiper = () => {
         {PortfolioList.map((item) => (
           <SwiperSlide>
             <p>
-              <img
-                src={`./images/portfolio_slider_${item.id + 1}.jpg`}
-                alt={item.title}
-              />
+              <img src={`./images/portfolio/${item.img}`} alt={item.title} />
             </p>
             <div className="text-box">
               <h3>{item.title}</h3>

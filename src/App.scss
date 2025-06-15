@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dongle&family=WDXL+Lubrifont+TC&display=swap");
 
-$메인컬러: #646cff;
+$메인컬러: #a1ceff;
 $제목컬러: #e97fff;
 $메인글자: #333;
+$배경: #05060fde;
 $둥글기: 30px;
 
 * {
@@ -40,6 +41,8 @@ body {
   }
 
   header {
+    z-index: 100;
+    background: $배경;
     line-height: 80px;
     position: fixed;
     width: 100%;
@@ -47,6 +50,12 @@ body {
     .logo {
       a {
         color: #fff;
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 10px;
+        }
       }
     }
 
@@ -63,6 +72,16 @@ body {
 
             a {
               color: #fff;
+            }
+
+            a:hover {
+              color: $메인컬러;
+            }
+
+            .active {
+              color: $메인컬러;
+              font-weight: bold;
+              border-bottom: 2px solid $메인컬러;
             }
           }
         }
@@ -83,6 +102,11 @@ body {
     padding: 100px 0;
   }
 
+  .todolist,
+  .contact {
+    height: 100vh;
+  }
+
   .skill-list {
     margin-top: 100px;
     @include myFlex(20px, start);
@@ -94,23 +118,33 @@ body {
 
   .about-wrap {
     font-size: 1.25rem;
-    font-weight: 100;
+    font-weight: 400;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
-    .big-text {
-      font-size: 5rem;
-    }
+    justify-content: center;
 
     .photo-wrap {
+      margin-right: 100px;
       font-size: 35rem;
       line-height: 1;
       text-shadow: 10px 10px 0 #646cff;
     }
+
+    .big-text {
+      font-size: 5rem;
+    }
+  }
+
+  .introduction {
+    font-size: 1.25rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .contact-wrap {
+    padding-top: 100px;
     max-width: 600px;
     margin: 0 auto;
 
@@ -118,13 +152,33 @@ body {
       input,
       textarea,
       button {
+        font-size: 1.25rem;
+        font-weight: 700;
         width: 100%;
-        line-height: 40px;
-        padding: 0 10px;
+        padding: 20px 10px;
+      }
+
+      textarea {
+        padding-bottom: 90px;
+      }
+
+      button {
+        color: #fff;
+        border: none;
+        background: $메인컬러;
+      }
+
+      button:hover {
+        background: #50a1f7;
+        cursor: pointer;
       }
     }
   }
 
   footer {
+    text-align: center;
+    background: $배경;
+    line-height: 80px;
+    color: $메인컬러;
   }
 }

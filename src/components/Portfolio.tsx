@@ -4,11 +4,11 @@ import PortFolioSwiper from "../components/PortFolioSwiper";
 
 const Portfolio = () => {
   return (
-    <div className="main portfolio">
+    <div className="main portfolio" id="portfolio">
       <div className="content-inner">
         <SectionTitle
           title="Portfolio"
-          subTitle="저의 포트폴리오를 소개합니다."
+          subTitle="직접 개발한 프로젝트입니다."
         />
         <div>
           <PortFolioSwiper />

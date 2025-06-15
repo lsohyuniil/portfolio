@@ -1,27 +1,24 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout";
-import Main from "./pages/Main";
-import About from "./pages/About";
-import Skill from "./pages/Skill";
-import Portfolio from "./pages/Portfolio";
-import TodoList from "./pages/TodoList";
-import Contact from "./pages/Contact";
 import "./App.scss";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Main from "./components/Main";
+import About from "./components/About";
+import Skill from "./components/Skill";
+import Portfolio from "./components/Portfolio";
+import TodoList from "./components/TodoList";
+import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Main />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skill" element={<Skill />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/todolist" element={<TodoList />} />
-          <Route path="/contact" element={<Contact />} />
-        </Route>
-      </Routes>
+    <div className="App wrap">
+      <Header />
+      <Main />
+      <About />
+      <Skill />
+      <Portfolio />
+      {/* <TodoList /> */}
+      <Contact />
+      <Footer />
     </div>
   );
 }

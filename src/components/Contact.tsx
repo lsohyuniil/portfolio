@@ -31,20 +31,25 @@ const Contact = () => {
       )
       .then(
         () => {
-          alert("메일 보내기 성공");
+          alert(
+            "👍 메일이 성공적으로 전송되었습니다. 빠른 시일 내에 답변드리겠습니다."
+          );
           setFormData({ name: "", email: "", message: "" });
         },
         (error) => {
           // console.log("메일 보내기 실패", error.text);
-          alert("메일 보내기 실패" + error.text);
+          alert(
+            "❌ 메일 전송에 실패했습니다. 잠시 후 다시 시도해주세요." +
+              error.text
+          );
         }
       );
   };
 
   return (
-    <div className="main contact">
+    <div className="main contact" id="contact">
       <div className="content-inner">
-        <SectionTitle title="Contact Us" />
+        <SectionTitle title="Contact Me" subTitle="언제든 편하게 연락주세요." />
         <div className="contact-wrap">
           <div>
             <form onSubmit={handleSubmit}>
@@ -53,7 +58,7 @@ const Contact = () => {
                   name="name"
                   value={formData.name}
                   type="text"
-                  placeholder="이름"
+                  placeholder="성함을 입력해 주세요."
                   onChange={handleChange}
                 />
               </p>
@@ -62,7 +67,7 @@ const Contact = () => {
                   name="email"
                   value={formData.email}
                   type="email"
-                  placeholder="이메일"
+                  placeholder="이메일을 입력해 주세요."
                   onChange={handleChange}
                 />
               </p>
@@ -70,7 +75,7 @@ const Contact = () => {
                 <textarea
                   name="message"
                   value={formData.message}
-                  placeholder="메세지를 입력하세요."
+                  placeholder="메세지를 입력해 주세요."
                   onChange={handleChange}
                 />
               </p>

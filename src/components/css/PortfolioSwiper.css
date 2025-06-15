@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=WDXL+Lubrifont+TC&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,28 +14,58 @@ li {
   list-style: none;
 }
 
+body {
+  background-color: black;
+  color: #fff;
+}
+
 .wrap .content-inner {
   max-width: 1400px;
   margin: 0 auto;
 }
 .wrap header {
+  z-index: 100;
+  background: rgba(5, 6, 15, 0.8705882353);
   line-height: 80px;
+  position: fixed;
+  width: 100%;
+}
+.wrap header .logo a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.wrap header .logo a img {
+  margin-right: 10px;
 }
 .wrap header .content-inner div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 0;
+  flex-wrap: wrap;
 }
 .wrap header .content-inner div ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 50px;
+  flex-wrap: wrap;
 }
 .wrap header .content-inner div ul li {
-  font-size: 1.13rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.wrap header .content-inner div ul li a {
+  color: #fff;
+}
+.wrap header .content-inner div ul li a:hover {
+  color: #a1ceff;
+}
+.wrap header .content-inner div ul li .active {
+  color: #a1ceff;
   font-weight: bold;
+  border-bottom: 2px solid #a1ceff;
 }
 .wrap .index {
   height: 100vh;
@@ -42,22 +73,94 @@ li {
   justify-content: space-between;
   align-items: center;
   gap: 0;
+  flex-wrap: wrap;
 }
 .wrap .index .content-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0;
+  gap: 100px;
+  flex-wrap: wrap;
 }
 .wrap .main {
   padding: 100px 0;
 }
+.wrap .todolist,
+.wrap .contact {
+  height: 100vh;
+}
+.wrap .skill-list {
+  margin-top: 100px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.wrap .skill-list li {
+  width: calc(25% - 20px);
+}
+.wrap .about-wrap {
+  font-size: 1.25rem;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap .about-wrap .photo-wrap {
+  margin-right: 100px;
+  font-size: 35rem;
+  line-height: 1;
+  text-shadow: 10px 10px 0 #646cff;
+}
+.wrap .about-wrap .big-text {
+  font-size: 5rem;
+}
+.wrap .introduction {
+  font-size: 1.25rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap .contact-wrap {
+  padding-top: 100px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.wrap .contact-wrap form input,
+.wrap .contact-wrap form textarea,
+.wrap .contact-wrap form button {
+  font-size: 1.25rem;
+  font-weight: 700;
+  width: 100%;
+  padding: 20px 10px;
+}
+.wrap .contact-wrap form textarea {
+  padding-bottom: 90px;
+}
+.wrap .contact-wrap form button {
+  color: #fff;
+  border: none;
+  background: #a1ceff;
+}
+.wrap .contact-wrap form button:hover {
+  background: #50a1f7;
+  cursor: pointer;
+}
+.wrap footer {
+  text-align: center;
+  background: rgba(5, 6, 15, 0.8705882353);
+  line-height: 80px;
+  color: #a1ceff;
+}
+
 .portSwiper .swiper-slide {
   display: flex;
   gap: 30px;
 }
 .portSwiper .swiper-slide img {
-  width: 100%;
+  width: 800px;
   border-radius: 30px;
 }
 .portSwiper .swiper-slide .text-box {
@@ -68,12 +171,18 @@ li {
 }
 .portSwiper .swiper-slide .text-box > p {
   margin: 10px 0 30px;
+  font-weight: 700;
+}
+.portSwiper .swiper-slide .text-box .btn-wrap span {
+  line-height: 25px;
 }
 .portSwiper .swiper-slide .text-box .btn-wrap ul {
+  margin-top: 30px;
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .portSwiper .swiper-slide .text-box .btn-wrap ul li a {
   display: inline-block;
@@ -82,4 +191,7 @@ li {
   color: #fff;
   border-radius: 30px;
   text-transform: uppercase;
+}
+.portSwiper .swiper-slide .text-box .btn-wrap ul li a:hover {
+  background: #a1ceff;
 }/*# sourceMappingURL=PortfolioSwiper.css.map */

@@ -24,9 +24,19 @@ body {
   margin: 0 auto;
 }
 .wrap header {
+  z-index: 100;
+  background: rgba(5, 6, 15, 0.8705882353);
   line-height: 80px;
   position: fixed;
   width: 100%;
+}
+.wrap header .logo a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.wrap header .logo a img {
+  margin-right: 10px;
 }
 .wrap header .content-inner div {
   display: flex;
@@ -78,12 +88,42 @@ body {
 .wrap .skill-list li {
   width: calc(25% - 20px);
 }
+.wrap .about-wrap {
+  font-size: 1.25rem;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrap .about-wrap .big-text {
+  font-size: 5rem;
+}
+.wrap .about-wrap .photo-wrap {
+  font-size: 35rem;
+  line-height: 1;
+  text-shadow: 10px 10px 0 #646cff;
+}
+.wrap .contact-wrap {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.wrap .contact-wrap form input,
+.wrap .contact-wrap form textarea,
+.wrap .contact-wrap form button {
+  width: 100%;
+  line-height: 40px;
+  padding: 0 10px;
+}
 .skill-card:hover .card-wrap {
   transform: rotateY(180deg);
 }
 .skill-card .card-wrap {
   border-radius: 30px;
-  padding: 30px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   transform: perspective(800px) rotateY(0);
   transform-style: preserve-3d;
@@ -101,14 +141,14 @@ body {
 .skill-card .card-wrap .card-img img {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
   overflow: hidden;
 }
 .skill-card .card-wrap .card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #646cff;
+  background: #001ba1;
+  background: linear-gradient(180deg, rgba(0, 27, 161, 0.7) 0%, rgba(87, 141, 199, 0.74) 50%, rgba(255, 133, 239, 0.6) 100%);
   top: 0;
   left: 0;
   transform: rotateY(180deg);
@@ -117,7 +157,8 @@ body {
   border-radius: 30px;
 }
 .skill-card .card-wrap .card-back .card-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  text-align: center;
   text-transform: uppercase;
 }
 .skill-card .card-wrap .card-back .card-per {

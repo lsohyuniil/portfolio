@@ -1,6 +1,7 @@
 # sohyun's portfolio 
 
-<img src="https://github.com/user-attachments/assets/e7db03d3-0a01-4935-ac57-82708834a83b">
+<img src="https://github.com/user-attachments/assets/48a049c1-0ccc-49ae-9e2a-846ce99b0fcf">
+
 
 ## 📄 프로젝트 소개
 
